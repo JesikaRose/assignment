@@ -1,0 +1,65 @@
+.nav-bar {
+    display: flex;
+    height: 3.5em;
+    justify-content: end;
+    align-items: center;
+    gap: 2em;
+    padding-right: 2em;
+    background-color: rgba(255, 255, 255, 0.25);
+}
+
+.imgblocks {
+    width: 1000px;
+    height: 300px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.imgblocks figure {
+    align-self: center;
+}
+
+.imgblocks img {
+    border: 6px solid rgba(255, 255, 255, 0.25);
+}
+
+figure {
+    position: relative;
+    width: 200px;
+    margin: 0 auto;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding-top: 10px;
+}
+
+button {
+    width: 50%;
+    margin: 0 auto;
+}
+
+input {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.menu-items {
+    display: flex;
+    width: 1000px;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.menu-price {
+    text-align: right;
+    font-size: 14px;
+}
+
+.menu-1 {
+    border-bottom: 2px solid #fff;
+}

@@ -1,0 +1,71 @@
+@import url(./components.css);
+@import url(./typography.css);
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500;600;700&family=Poppins:wght@200;300;400;500;600&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css");
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html, 
+body {
+    height: 100%;
+}
+
+body {
+    background: linear-gradient(to bottom,
+            rgba(150, 150, 150, 0.9),
+            rgba(0, 0, 0, 0.5)),
+        url("https://picsum.photos/id/192/2000");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+header {
+    grid-area: header;
+}
+
+main {
+    grid-area: main;
+}
+
+footer {
+    background-color: #235c17;
+    grid-area: footer;
+}
+
+body {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px 1fr 100px;
+    grid-template-areas:
+        "header header header"
+        "main main main"
+        "footer footer footer";
+}
+
+.container {
+    width: 1000px;
+    height: auto;
+    margin: 0 auto;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.suggestion-box {
+    width: 1000px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-direction: column;
+    text-align: center;
+}
